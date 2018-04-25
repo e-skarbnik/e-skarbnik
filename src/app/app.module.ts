@@ -1,11 +1,28 @@
+import {FormsModule} from '@angular/forms';
+import {AngularFirestoreModule} from 'angularfire2/firestore';
+import {AngularFireModule} from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { MemberService } from './services/member.service';
+import { AuthService } from './services/auth.service';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './navbar/login/login.component';
 import { RegisterComponent } from './navbar/register/register.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './navbar/home/home.component';
+
+import { environment } from '../environments/environment';
+
+import { AppRoutingModule } from './app.routing.module';
+import { UsersListComponent } from './navbar/users/users-list/users-list.component';
+import { UsersComponent } from './navbar/users/users.component';
+
+
+
 
 
 @NgModule({
@@ -13,12 +30,21 @@ import { RegisterComponent } from './navbar/register/register.component';
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PageNotFoundComponent,
+    HomeComponent,
+    UsersListComponent,
+    UsersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AngularFireModule.initializeApp(environment.fireBaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [AuthService, MemberService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

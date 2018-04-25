@@ -21,12 +21,13 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@firebase/app": "^0.1.10",
     "angularfire2": "^5.0.0-rc.6.0",
     "bootstrap": "^4.1.0",
     "core-js": "^2.4.1",
     "firebase": "^4.13.1",
     "jquery": "^3.3.1",
-    "rxjs": "^5.5.6",
+    "rxjs": "^5.5.10",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
