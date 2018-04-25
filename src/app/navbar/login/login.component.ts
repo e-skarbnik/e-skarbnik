@@ -16,4 +16,7 @@ export class LoginComponent implements OnInit {
   login(tableData: NgForm) {
     this.authService.login(tableData.value.email, tableData.value.password);
   }
+  signInWithGoogle() {
+    this.authService.signInWithGoogle();
+  }
 }

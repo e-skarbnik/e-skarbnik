@@ -1,9 +1,9 @@
-import * as firebase from 'firebase/app';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Router } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { MemberService } from './member.service';
 import { Member } from '../models/member.model';
+import * as firebase from 'firebase/app';
 
 @Injectable()
 export class AuthService {
@@ -34,11 +34,14 @@ export class AuthService {
   }
   logout() {
     this.afAuth.auth.signOut().catch(err => { console.log(err); }).then(value => { console.log(value); });
-    //this.afAuth.auth.signOut();
     this.router.navigateByUrl('/home');
   }
   signInWithGoogle() {
-    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
+    const provider = new firebase.auth.GoogleAuthProvider();
+    provider.addScope('profile');
+    provider.addScope('email');
+    console.log(provider);
+    this.afAuth.auth.signInWithPopup( provider )
       .then((user => {
         console.log(user);
         const use: Member = {
@@ -50,6 +53,6 @@ export class AuthService {
         };
         this.memberService.addMember(use);
       }))
-      .catch();
+      .catch(err => { console.log(err); });
   }
 }
