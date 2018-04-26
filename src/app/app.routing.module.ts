@@ -6,6 +6,7 @@ import { RegisterComponent } from './navbar/register/register.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './navbar/home/home.component';
 import { UsersComponent } from './navbar/users/users.component';
+import { UserEditComponent } from './navbar/users/user-edit/user-edit.component';
 
 const appRoutes: Routes = [
   {
@@ -33,6 +34,10 @@ const appRoutes: Routes = [
   {
     path: 'members',
     component: UsersComponent
+  },
+  {
+    path: 'member',
+    component: UserEditComponent
   },
   {
     path: '**',
