@@ -36,7 +36,7 @@ const appRoutes: Routes = [
     component: UsersComponent
   },
   {
-    path: 'member',
+    path: 'member/:key',
     component: UserEditComponent
   },
   {
