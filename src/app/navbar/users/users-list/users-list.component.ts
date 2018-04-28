@@ -18,5 +18,8 @@ export class UsersListComponent implements OnInit {
 
   ngOnInit() {
   }
+  delete(user: Member) {
+    this.memberService.removeMember(user);
+  }
 
 }
