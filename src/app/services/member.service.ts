@@ -2,6 +2,8 @@ import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { Member } from '../models/member.model';
+import { useAnimation } from '@angular/core/src/animation/dsl';
+import { AuthService } from './auth.service';
 
 @Injectable()
 export class MemberService {
@@ -28,8 +30,19 @@ export class MemberService {
   getMemberByUID(uid: string) {
     this.userDoc = this.firestore.doc<Member>('users/' + uid);
     this.us = this.userDoc.valueChanges();
+    return this.us;
   }
   updateMember(user: Member) {
     this.userDoc.update(user);
+  }
+  removeMember(us: Member) {
+    this.userDoc = this.firestore.doc<Member>('users/' + us.key);
+    this.userDoc.delete()
+    .then(v => {
+      console.log(v);
+    })
+    .catch(err => {
+      console.log(err);
+    });
   }
 }

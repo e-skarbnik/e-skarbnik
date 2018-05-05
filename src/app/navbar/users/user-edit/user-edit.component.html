@@ -1,0 +1,40 @@
+<div class="col-md-6">
+  <form (ngSubmit)="updateMember(formData)" #formData="ngForm">
+    <div class="form-group row">
+      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input [(ngModel)]="member.email" name="email" autocomplete="email" type="text" class="form-control" placeholder="mail@example.com" #email="ngModel">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="staticName" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input [(ngModel)]="member.name" name="name" autocomplete="name"  type="text" class="form-control" placeholder="Your name" #name="ngModel">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="staticName" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input [(ngModel)]="member.surname" name="surname" autocomplete="surname" type="text" class="form-control" placeholder="Your surname" #surname="ngModel">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="staticName" class="col-sm-2 col-form-label">Paymaster</label>
+      <div class="col-sm-1">
+        <input [(ngModel)]="member.paymaster" name="paymaster" type="checkbox" class="form-control" checked #paymaster="ngModel">
+      </div>
+    </div>
+    <div class="form-group row active">
+      <label for="staticName" class="col-sm-2 col-form-label">Admin</label>
+      <div class="col-sm-1">
+        <input [(ngModel)]="member.admin" name="admin" type="checkbox" class="form-control" #admin="ngModel">
+      </div>
+    </div>
+    <div class="form-group row">
+       <div class="col-sm-12">
+        <input [(ngModel)]="member.key" name="key" autocomplete="key" type="text" class="form-control" #key ="ngModel">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>

@@ -20,6 +20,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app.routing.module';
 import { UsersListComponent } from './navbar/users/users-list/users-list.component';
 import { UsersComponent } from './navbar/users/users.component';
+import { UserEditComponent } from './navbar/users/user-edit/user-edit.component';
 
 
 
@@ -34,7 +35,8 @@ import { UsersComponent } from './navbar/users/users.component';
     PageNotFoundComponent,
     HomeComponent,
     UsersListComponent,
-    UsersComponent
+    UsersComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,
