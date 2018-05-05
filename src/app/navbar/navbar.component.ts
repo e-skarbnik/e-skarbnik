@@ -11,6 +11,8 @@ export class NavbarComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
+    // console.log(this.authService.isLoggedIn);
+    // Linia powyzej zwraca "undefined" - niezaleznie cyz jestem zalogowany czy nie
   }
 
   logout() {
