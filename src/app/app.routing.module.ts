@@ -8,6 +8,7 @@ import { HomeComponent } from './navbar/home/home.component';
 import { UsersComponent } from './navbar/users/users.component';
 import { UserEditComponent } from './navbar/users/user-edit/user-edit.component';
 import { AuthGuardService } from './services/auth-guard.service';
+import { ClassesComponent } from './navbar/classes/classes.component';
 
 const appRoutes: Routes = [
   {
@@ -40,6 +41,11 @@ const appRoutes: Routes = [
   {
     path: 'member/:key',
     component: UserEditComponent
+  },
+  {
+    path: 'classes',
+    component: ClassesComponent,
+    canActivate: [AuthGuardService]
   },
   {
     path: '**',

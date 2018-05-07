@@ -30,9 +30,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item">Add Class</a>
-          <a class="dropdown-item">Edit Class</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item">Classes list</a>
+          <a class="dropdown-item" routerLink="/classes">Classes list</a>
         </div>
       </li>
       <li class="nav-item dropdown" *ngIf="authService.userToken">

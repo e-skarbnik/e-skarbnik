@@ -2,8 +2,6 @@ import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { Member } from '../models/member.model';
-import { useAnimation } from '@angular/core/src/animation/dsl';
-import { AuthService } from './auth.service';
 
 @Injectable()
 export class MemberService {

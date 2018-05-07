@@ -22,10 +22,10 @@ import { UsersListComponent } from './navbar/users/users-list/users-list.compone
 import { UsersComponent } from './navbar/users/users.component';
 import { UserEditComponent } from './navbar/users/user-edit/user-edit.component';
 import { AuthGuardService } from './services/auth-guard.service';
-
-
-
-
+import { ClassCrudService } from './services/class-crud.service';
+import { ClassesComponent } from './navbar/classes/classes.component';
+import { ClassEditComponent } from './navbar/classes/class-edit/class-edit.component';
+import { ClassListComponent } from './navbar/classes/class-list/class-list.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,10 @@ import { AuthGuardService } from './services/auth-guard.service';
     HomeComponent,
     UsersListComponent,
     UsersComponent,
-    UserEditComponent
+    UserEditComponent,
+    ClassesComponent,
+    ClassEditComponent,
+    ClassListComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,7 @@ import { AuthGuardService } from './services/auth-guard.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [AuthService, MemberService, AuthGuardService],
+  providers: [AuthService, MemberService, AuthGuardService, ClassCrudService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
