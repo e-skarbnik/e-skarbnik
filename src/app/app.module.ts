@@ -22,6 +22,7 @@ import { UsersListComponent } from './navbar/users/users-list/users-list.compone
 import { UsersComponent } from './navbar/users/users.component';
 import { UserEditComponent } from './navbar/users/user-edit/user-edit.component';
 import { AuthGuardService } from './services/auth-guard.service';
+import { ClassCrudService } from './services/class-crud.service';
 
 
 
@@ -47,7 +48,7 @@ import { AuthGuardService } from './services/auth-guard.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [AuthService, MemberService, AuthGuardService],
+  providers: [AuthService, MemberService, AuthGuardService, ClassCrudService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
