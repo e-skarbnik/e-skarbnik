@@ -4,11 +4,17 @@ import { Injectable } from '@angular/core';
 import { MemberService } from './member.service';
 import { Member } from '../models/member.model';
 import * as firebase from 'firebase/app';
+import { User } from 'firebase/app';
 
 @Injectable()
 export class AuthService {
-
-  constructor(public afAuth: AngularFireAuth, public router: Router, public memberService: MemberService) { }
+  user: User;
+  constructor(public afAuth: AngularFireAuth, public router: Router, public memberService: MemberService) {
+    afAuth.authState.subscribe(user => {
+      this.user = user;
+      console.log(this.user);
+    });
+   }
 
   login(mail: string, password: string) {
     this.afAuth.auth.signInWithEmailAndPassword(mail, password)
