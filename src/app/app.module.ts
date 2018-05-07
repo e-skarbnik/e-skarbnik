@@ -21,6 +21,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { UsersListComponent } from './navbar/users/users-list/users-list.component';
 import { UsersComponent } from './navbar/users/users.component';
 import { UserEditComponent } from './navbar/users/user-edit/user-edit.component';
+import { AuthGuardService } from './services/auth-guard.service';
 
 
 
@@ -46,7 +47,7 @@ import { UserEditComponent } from './navbar/users/user-edit/user-edit.component'
     AppRoutingModule,
     FormsModule
   ],
-  providers: [AuthService, MemberService],
+  providers: [AuthService, MemberService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

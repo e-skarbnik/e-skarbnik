@@ -8,11 +8,11 @@ import { User } from 'firebase/app';
 
 @Injectable()
 export class AuthService {
-  user: User;
+  userToken: User;
   constructor(public afAuth: AngularFireAuth, public router: Router, public memberService: MemberService) {
     afAuth.authState.subscribe(user => {
-      this.user = user;
-      console.log(this.user);
+      this.userToken = user;
+      console.log(this.userToken);
     });
   }
 

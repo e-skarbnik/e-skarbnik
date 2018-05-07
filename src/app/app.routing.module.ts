@@ -7,6 +7,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HomeComponent } from './navbar/home/home.component';
 import { UsersComponent } from './navbar/users/users.component';
 import { UserEditComponent } from './navbar/users/user-edit/user-edit.component';
+import { AuthGuardService } from './services/auth-guard.service';
 
 const appRoutes: Routes = [
   {
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
   },
   {
     path: 'members',
-    component: UsersComponent
+    component: UsersComponent,
+    canActivate: [AuthGuardService]
   },
   {
     path: 'member/:key',

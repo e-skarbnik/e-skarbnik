@@ -10,7 +10,7 @@ export class AuthGuardService implements CanActivate {
 
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-    if (this.authService.user) {
+    if (this.authService.userToken) {
       return true;
     }
     return false;
