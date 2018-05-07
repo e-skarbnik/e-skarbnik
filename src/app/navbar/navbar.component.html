@@ -13,7 +13,7 @@
           <span class="sr-only">(current)</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li *ngIf="authService.userToken" class="nav-item dropdown">
         <a class="nav-link dropdown-toggle sm" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Users
         </a>
@@ -24,7 +24,7 @@
           <a class="dropdown-item" routerLink="/members">Users list</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" *ngIf="authService.userToken">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Class
         </a>
@@ -35,7 +35,7 @@
           <a class="dropdown-item">Classes list</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" *ngIf="authService.userToken">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Event
         </a>
@@ -46,14 +46,14 @@
           <a class="dropdown-item">Events list</a>
         </div>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="!authService.userToken">
         <a class="nav-link" routerLink="/login">Login</a>
       </li>
       <!-- <li class="nav-item" *ngIf="authService.isLoggedIn"> -->
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="authService.userToken">
         <a class="nav-link" (click)="logout()" routerLink="/logout">Logout</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="!authService.userToken">
         <a class="nav-link" routerLink="/register">Register</a>
       </li>
     </ul>
