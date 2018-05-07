@@ -14,13 +14,16 @@ export class AuthService {
       this.user = user;
       console.log(this.user);
     });
-   }
+  }
 
   login(mail: string, password: string) {
     this.afAuth.auth.signInWithEmailAndPassword(mail, password)
-      .then(user => { console.log(user); })
+      .then(user => {
+        console.log(user);
+        this.router.navigateByUrl('/home');
+      })
       .catch(err => { console.log(err); });
-    this.router.navigateByUrl('/home');
+
   }
   signup(us: Member, password) {
     this.afAuth.auth.createUserWithEmailAndPassword(us.email, password)
@@ -34,20 +37,26 @@ export class AuthService {
         };
         this.memberService.addMember(use);
         console.log(user);
+        this.router.navigateByUrl('/home');
       })
       .catch(err => { console.log(err); });
-    this.router.navigateByUrl('/home');
+
   }
   logout() {
-    this.afAuth.auth.signOut().catch(err => { console.log(err); }).then(value => { console.log(value); });
-    this.router.navigateByUrl('/home');
+    this.afAuth.auth.signOut()
+    .then(value => {
+      console.log(value);
+      this.router.navigateByUrl('/home');
+    })
+    .catch(err => { console.log(err); });
+
   }
   signInWithGoogle() {
     const provider = new firebase.auth.GoogleAuthProvider();
     provider.addScope('profile');
     provider.addScope('email');
     console.log(provider);
-    this.afAuth.auth.signInWithPopup( provider )
+    this.afAuth.auth.signInWithPopup(provider)
       .then((user => {
         console.log(user);
         const use: Member = {
