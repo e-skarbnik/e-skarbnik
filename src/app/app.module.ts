@@ -15,6 +15,8 @@ import { RegisterComponent } from './navbar/register/register.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './navbar/home/home.component';
 
+import { FooterComponent } from './footer/footer.component';
+
 import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app.routing.module';
@@ -31,6 +33,7 @@ import { ClassListComponent } from './navbar/classes/class-list/class-list.compo
   declarations: [
     AppComponent,
     NavbarComponent,
+    FooterComponent,
     LoginComponent,
     RegisterComponent,
     PageNotFoundComponent,
