@@ -1,0 +1,30 @@
+<form (ngSubmit)="onSubmit(formData)" #formData="ngForm">
+  <div class="title">
+    <h3>Here you can create your own Class!</h3>
+  </div>
+  <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            Choose a name for your class:
+            <div class="input-group mb-3">
+              <input class="form-control" name="name" #name="ngModel" [(ngModel)]="clsCrud.selectedClass.name" placeholder="ClassName">
+            </div>
+          </div>
+          <div class="col-sm">
+            Select students who will belong to your class:
+            <div *ngFor="let user of users | async">
+              <p class="small">
+                {{ user.name }}
+                {{ user.surname }}
+              </p>
+            </div>
+          </div>
+          <div class="col-sm">
+            See the result and create:
+            <div>
+              <button type="submit" class="btn btn-outline-secondary">Create</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
