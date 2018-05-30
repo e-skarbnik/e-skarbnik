@@ -10,7 +10,7 @@ import { ClassCrudService } from '../../../services/class-crud.service';
 })
 export class ClassListComponent implements OnInit {
 
-  clss: Observable<Class[]>;
+  clss: any;
 
   constructor(private clsService: ClassCrudService) {
     this.clss = this.clsService.getClasses();

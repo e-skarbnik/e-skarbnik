@@ -11,8 +11,9 @@ export class AuthService {
   userToken: User;
   constructor(public afAuth: AngularFireAuth, public router: Router, public memberService: MemberService) {
     afAuth.authState.subscribe(user => {
-      this.userToken = user;
-      console.log(this.userToken);
+      if (user !== undefined) {
+        this.userToken = user;
+      }
     });
   }
 
@@ -44,11 +45,11 @@ export class AuthService {
   }
   logout() {
     this.afAuth.auth.signOut()
-    .then(value => {
-      console.log(value);
-      this.router.navigateByUrl('/home');
-    })
-    .catch(err => { console.log(err); });
+      .then(value => {
+        console.log(value);
+        this.router.navigateByUrl('/home');
+      })
+      .catch(err => { console.log(err); });
 
   }
   signInWithGoogle() {

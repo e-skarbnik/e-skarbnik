@@ -25,7 +25,7 @@ export class MemberService {
     this.usersCollection = this.firestore.collection<Member>('users');
     this.usersCollection.doc(user.key).set(user).then(() => { console.log('User added'); }).catch(err => { console.log(err); });
   }
-  getMemberByUID(uid: string) {
+  getMemberByUID(uid) {
     this.userDoc = this.firestore.doc<Member>('users/' + uid);
     this.us = this.userDoc.valueChanges();
     return this.us;
