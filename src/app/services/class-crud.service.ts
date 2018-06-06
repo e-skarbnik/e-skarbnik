@@ -6,6 +6,7 @@ import { Observable } from 'rxjs/Observable';
 import { Member } from '../models/member.model';
 import { map } from 'rxjs/operators';
 import { MemberService } from './member.service';
+import { element } from 'protractor';
 
 
 @Injectable()
@@ -17,6 +18,7 @@ export class ClassCrudService {
   clss: Observable<Class>;
   clssSnap: any;
   members: any;
+  member: any;
 
   constructor(private angularFirestore: AngularFirestore, private memSer: MemberService) { }
 
@@ -28,24 +30,22 @@ export class ClassCrudService {
         const data = a.payload.doc.data() as any;
 
         if (data.members !== undefined) {
-          console.log(data.members[0].path);
+  //        console.log(data.members[0]);
 
-          // this.members = this.angularFirestore.collection('users').doc(data.members[0].path).snapshotChanges();
-          this.members = this.angularFirestore.collection('users').doc('TBiAQajugIQnoCD9bMHkwmm7pKc2');
-          console.log('kurwaaaa');
+          let memArr = [];
 
-          this.members.valueChanges().subscribe((profile: any) => {
+          data.members.forEach(elem => {
+            this.member = this.angularFirestore.collection('users').doc(elem.id);
+
+            this.member.valueChanges().subscribe((profile: any) => {
               console.log(profile);
-         });
+              memArr.push(profile.name);
+            });
+          });
+          // this.members = this.angularFirestore.collection('users').doc(data.members[0].path).snapshotChanges();
 
-          //   .map(act => {
-          //     const mem = act.payload.data() as any;
-          //     console.log(mem);
-          //     console.log('Kurwa czemu nie działasz?');
-          //     return { ...mem };
-          //   });
-          const me = this.members;
-          return { ...data };
+          console.log(memArr);
+          return { ...data, memberArray: memArr };
         }
         //     const me = this.angularFirestore.doc(data.member);
 
