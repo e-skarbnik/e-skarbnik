@@ -17,7 +17,6 @@ export class ClassCrudService {
   clsDoc: AngularFirestoreDocument<Class>;
   clss: Observable<Class>;
   clssSnap: any;
-  members: any;
   member: any;
 
   constructor(private angularFirestore: AngularFirestore, private memSer: MemberService) { }
