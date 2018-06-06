@@ -27,8 +27,8 @@ export class ClassCrudService {
       a => {
         const data = a.payload.doc.data() as any;
 
-        if (data.member !== undefined) {
-          console.log(data.member.path);
+        if (data.members !== undefined) {
+          console.log(data.members[0].path);
 
           // this.members = this.angularFirestore.doc(data.member.path).snapshotChanges()
           //   .map(act => {
