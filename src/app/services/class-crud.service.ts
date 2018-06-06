@@ -30,15 +30,15 @@ export class ClassCrudService {
         if (data.member !== undefined) {
           console.log(data.member.path);
 
-          this.members = this.angularFirestore.doc(data.member.path).snapshotChanges()
-            .map(act => {
-              const mem = act.payload.data() as any;
-              console.log(mem);
-              console.log('Kurwa czemu nie działasz?');
-              return { ...mem };
-            });
+          // this.members = this.angularFirestore.doc(data.member.path).snapshotChanges()
+          //   .map(act => {
+          //     const mem = act.payload.data() as any;
+          //     console.log(mem);
+          //     console.log('Kurwa czemu nie działasz?');
+          //     return { ...mem };
+          //   });
           const me = this.members;
-          return { me, ...data };
+          return { ...data };
         }
         //     const me = this.angularFirestore.doc(data.member);
 

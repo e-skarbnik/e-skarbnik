@@ -14,8 +14,8 @@
         <tbody>
           <tr *ngFor="let cls of clss | async">
             <th scope="row"></th>
-            <td>{{cls.name}}</td>
-            <td>{{ cls.member }}</td>
+            <td>{{ clss.name }}</td>
+            <td>{{ clss.member }}</td>
             <td><button type="button" class="btn btn-primary">Edit</button></td>
           </tr>
       </table>
