@@ -15,44 +15,44 @@
       </li>
       <li *ngIf="authService.userToken" class="nav-item dropdown">
         <a class="nav-link dropdown-toggle sm" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Users
+          Użytkownicy
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="/memberadd">Add User</a>
-          <a class="dropdown-item">Edit User</a>
+          <a class="dropdown-item" routerLink="/memberadd">Dodaj użytkownika</a>
+          <a class="dropdown-item">Edytuj użytkownika</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/members">Users list</a>
+          <a class="dropdown-item" routerLink="/members">Lista użytkowników</a>
         </div>
       </li>
       <li class="nav-item dropdown" *ngIf="authService.userToken">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Class
+          Klasy
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item">Add Class</a>
+          <a class="dropdown-item">Dodaj klasę</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/classes">Classes list</a>
+          <a class="dropdown-item" routerLink="/classes">Lista klas</a>
         </div>
       </li>
       <li class="nav-item dropdown" *ngIf="authService.userToken">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Event
+          Zbiórki
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item">Add Event</a>
-          <a class="dropdown-item">Edit Event</a>
+          <a class="dropdown-item">Dodaj wydarzenie</a>
+          <a class="dropdown-item">Edytuj wydarzenie</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item">Events list</a>
+          <a class="dropdown-item">Lista zbiórek</a>
         </div>
       </li>
       <li class="nav-item" *ngIf="!authService.userToken">
-        <a class="nav-link" routerLink="/login">Login</a>
+        <a class="nav-link" routerLink="/login">Logowanie</a>
       </li>
       <li class="nav-item" *ngIf="!authService.userToken">
-        <a class="nav-link" routerLink="/register">Register</a>
+        <a class="nav-link" routerLink="/register">Rejestracja</a>
       </li>
       <li class="nav-item" *ngIf="authService.userToken">
-        <a class="nav-link" (click)="logout()" routerLink="/logout">Logout</a>
+        <a class="nav-link" (click)="logout()" routerLink="/logout">Wyloguj się</a>
       </li>
     </ul>
   </div>
