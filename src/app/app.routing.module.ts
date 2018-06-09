@@ -9,6 +9,7 @@ import { UsersComponent } from './navbar/users/users.component';
 import { UserEditComponent } from './navbar/users/user-edit/user-edit.component';
 import { AuthGuardService } from './services/auth-guard.service';
 import { ClassesComponent } from './navbar/classes/classes.component';
+import { ClassEditComponent } from './navbar/classes/class-edit/class-edit.component';
 
 const appRoutes: Routes = [
   {
@@ -49,7 +50,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'classes/:id',
-    component: UserEditComponent
+    component: ClassEditComponent
   },
   {
     path: '**',

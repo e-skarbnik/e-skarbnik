@@ -61,6 +61,7 @@ export class ClassCrudService {
   getClassByID(id: string) {
     this.clsDoc = this.angularFirestore.doc<Class>('classes/' + id);
     this.clss = this.clsDoc.valueChanges();
+    return this.clss;
   }
   updateClass(cls: Class) {
     this.clsDoc.update(cls);
