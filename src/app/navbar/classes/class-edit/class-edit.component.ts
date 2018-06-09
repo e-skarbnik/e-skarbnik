@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../../services/auth.service';
+import { ActivatedRoute, Params } from '@angular/router';
+import { ClassCrudService } from '../../../services/class-crud.service';
+import { Class } from '../../../models/class.model';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-class-edit',
@@ -7,9 +12,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassEditComponent implements OnInit {
 
-  constructor() { }
+  cls: Class;
+
+  constructor(
+    private clService: ClassCrudService,
+    private authService: AuthService,
+    private route: ActivatedRoute,
+  ) {
+    this.route.params.switchMap((params: Params) => this.clService.getClassByID(params['id'])).subscribe(cl => this.cls = cl);
+   }
 
   ngOnInit() {
   }
-
+  updateClass(tableData: NgForm) {
+    const cls: Class = {
+      name: tableData.value.name,
+      description: tableData.value.description,
+      id: tableData.value.key
+    };
+    //console.log(member);
+    this.clService.updateClass(this.cls);
+  }
 }
