@@ -48,6 +48,10 @@ const appRoutes: Routes = [
     canActivate: [AuthGuardService]
   },
   {
+    path: 'classes/:id',
+    component: UserEditComponent
+  },
+  {
     path: '**',
     component: PageNotFoundComponent
   }

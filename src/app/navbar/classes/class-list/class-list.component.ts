@@ -11,9 +11,10 @@ import { ClassCrudService } from '../../../services/class-crud.service';
 export class ClassListComponent implements OnInit {
 
   clss: any;
-
+  clssId: string;
   constructor(private clsService: ClassCrudService) {
     this.clss = this.clsService.getClasses();
+    this.clssId = this.clss.getId;
    }
 
   ngOnInit() {

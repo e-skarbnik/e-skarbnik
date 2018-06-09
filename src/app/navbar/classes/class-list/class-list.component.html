@@ -16,7 +16,7 @@
             <th scope="row"></th>
             <td>{{ cls.name }}</td>
             <td><p *ngFor="let name of cls.memberArray">{{ name }}</p></td>
-            <td><button type="button" class="btn btn-primary" >Edit</button></td>
+            <td><button type="button" class="btn btn-primary" routerLink="/classes/{{ cls.id }}">Edit</button></td>
           </tr>
       </table>
     </div>

@@ -27,9 +27,10 @@ export class ClassCrudService {
     this.clssSnap = this.clsCollection.snapshotChanges().map(actions => actions.map(
       a => {
         const data = a.payload.doc.data() as any;
+ //       const id = a.payload.doc.id;
 
         if (data.members !== undefined) {
-  //        console.log(data.members[0]);
+          console.log(data);
 
           let memArr = [];
 
