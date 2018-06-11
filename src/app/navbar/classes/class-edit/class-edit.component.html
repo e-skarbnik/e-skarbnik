@@ -13,9 +13,21 @@
       </div>
     </div>
     <div class="form-group row">
-      <label for="staticName" class="col-sm-2 col-form-label">Description</label>
+      <label for="staticName" class="col-sm-2 col-form-label">Id</label>
       <div class="col-sm-10">
-        <input [(ngModel)]="cls.id" name="id" autocomplete="id" type="text" class="form-control hide" placeholder="id" #surname="ngModel">
+        <input [(ngModel)]="cls.id" name="id" autocomplete="id" type="text" class="form-control" placeholder="id" #surname="ngModel">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="staticName" class="col-sm-2 col-form-label">Members</label>
+      <div class="col-sm-10">
+          <select class="selectpicker form-control" multiple title="Choose one of the following...">
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Relish</option>
+            </select>
+
+        <!-- <input [(ngModel)]="cls.id" name="id" autocomplete="id" type="text" class="form-control hide" placeholder="id" #surname="ngModel"> -->
       </div>
     </div>
     <!-- <div class="form-group row">
@@ -24,6 +36,9 @@
         <input [(ngModel)]="cls.paymaster" name="paymaster" type="checkbox" class="form-control" checked #paymaster="ngModel">
       </div>
     </div> -->
+
+
+
 
 
     <button type="submit" class="btn btn-primary">Update</button>
