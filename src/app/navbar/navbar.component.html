@@ -14,20 +14,16 @@
         </a>
       </li>
       <li *ngIf="authService.userToken" class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle sm" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Użytkownicy
-        </a>
+        <a class="nav-link dropdown-toggle sm" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" i18n>Users</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="/memberadd">Dodaj użytkownika</a>
-          <a class="dropdown-item">Edytuj użytkownika</a>
+          <a class="dropdown-item" routerLink="/memberadd" i18n>Add user</a>
+          <a class="dropdown-item" i18n>Edit user</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/members">Lista użytkowników</a>
+          <a class="dropdown-item" routerLink="/members" i18n>User list</a>
         </div>
       </li>
       <li class="nav-item dropdown" *ngIf="authService.userToken">
-        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Klasy
-        </a>
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" i18n>Classes</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item">Dodaj klasę</a>
           <div class="dropdown-divider"></div>
