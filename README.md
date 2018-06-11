@@ -1,4 +1,4 @@
-# E-skarbnik
+# e-Skarbnik
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
@@ -34,4 +34,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ng xi18n
 
 ## Aby uruchomić aplikacje w odpowiedniej wersji jezykowej:
-ng serve --configuration=pl
+./serve_polish
