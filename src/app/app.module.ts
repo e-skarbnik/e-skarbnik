@@ -29,6 +29,16 @@ import { ClassesComponent } from './navbar/classes/classes.component';
 import { ClassEditComponent } from './navbar/classes/class-edit/class-edit.component';
 import { ClassListComponent } from './navbar/classes/class-list/class-list.component';
 
+import { ClassAddmembersComponent } from './class-addmembers/class-addmembers.component';
+import { ClassAddComponent } from './navbar/classes/class-add/class-add.component';
+
+// i18n
+import { registerLocaleData } from '@angular/common';
+import localePl from '@angular/common/locales/pl';
+
+// the second parameter 'pl' is optional
+registerLocaleData(localePl, 'pl');
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +53,9 @@ import { ClassListComponent } from './navbar/classes/class-list/class-list.compo
     UserEditComponent,
     ClassesComponent,
     ClassEditComponent,
-    ClassListComponent
+    ClassListComponent,
+    ClassAddmembersComponent,
+    ClassAddComponent
   ],
   imports: [
     BrowserModule,
