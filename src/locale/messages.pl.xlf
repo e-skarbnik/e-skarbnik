@@ -52,6 +52,7 @@
       </trans-unit>
       <trans-unit id="187cf9aea5ce14b7da445796e94d2d6c7c50ce15" datatype="html">
         <source>Class list</source>
+        <target>Lista klas</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
           <context context-type="linenumber">28</context>
@@ -90,14 +91,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="287d3301a32a65a1b31116bda5d3a6463158c42a" datatype="html">
-        <source>Zaloguj się</source>
+        <source>Sign in</source>
+        <target>Zaloguj się</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
           <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c40c132843f349c3aa49730405de1d0ca733aef6" datatype="html">
-        <source>Zarejestruj się</source>
+        <source>Sign up</source>
+        <target>Zarejestruj się</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
           <context context-type="linenumber">44</context>
