@@ -9,9 +9,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/home">Home
-          <span class="sr-only">(current)</span>
-        </a>
+        <a class="nav-link" routerLink="/home">Home<span class="sr-only">(current)</span></a>
       </li>
       <li *ngIf="authService.userToken" class="nav-item dropdown">
         <a class="nav-link dropdown-toggle sm" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" i18n>Users</a>
@@ -25,9 +23,9 @@
       <li class="nav-item dropdown" *ngIf="authService.userToken">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" i18n>Classes</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item">Dodaj klasę</a>
+          <a class="dropdown-item" i18n>Add class</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" routerLink="/classes">Lista klas</a>
+          <a class="dropdown-item" routerLink="/classes" i18n>Class list</a>
         </div>
       </li>
       <li class="nav-item dropdown" *ngIf="authService.userToken">
@@ -35,20 +33,20 @@
           Zbiórki
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item">Dodaj wydarzenie</a>
-          <a class="dropdown-item">Edytuj wydarzenie</a>
+          <a class="dropdown-item" i18n>Add event</a>
+          <a class="dropdown-item" i18n>Edit event</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item">Lista zbiórek</a>
+          <a class="dropdown-item" i18n>Event list</a>
         </div>
       </li>
       <li class="nav-item" *ngIf="!authService.userToken">
-        <a class="nav-link" routerLink="/login">Logowanie</a>
+        <a class="nav-link" routerLink="/login" i18n>Sign in</a>
       </li>
       <li class="nav-item" *ngIf="!authService.userToken">
-        <a class="nav-link" routerLink="/register">Rejestracja</a>
+        <a class="nav-link" routerLink="/register" i18n>Sign up</a>
       </li>
       <li class="nav-item" *ngIf="authService.userToken">
-        <a class="nav-link" (click)="logout()" routerLink="/logout">Wyloguj się</a>
+        <a class="nav-link" (click)="logout()" routerLink="/logout">Log out</a>
       </li>
     </ul>
   </div>
@@ -57,6 +55,6 @@
 <header class="bg-primary text-white">
   <div class="container text-center">
     <h1>e-Skarbnik</h1>
-    <p class="lead">Jesteś zalogowany jako <strong>{{ authService.userToken.displayName }}</strong></p>
+    <p class="lead" i18n>You are logged in as <strong>{{ authService.userToken.displayName }}</strong></p>
   </div>
 </header>
