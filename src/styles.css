@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+.navbar-expand-lg .navbar-nav.navbar-right .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
