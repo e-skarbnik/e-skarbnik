@@ -31,6 +31,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Aby zaktualizować tluamczenie:
 ng xi18n
+lub
+ng xi18n --output-path src/locale --out-file messages.pl.xlf
 
 ## Aby uruchomić aplikacje w odpowiedniej wersji jezykowej:
 ./serve_polish
