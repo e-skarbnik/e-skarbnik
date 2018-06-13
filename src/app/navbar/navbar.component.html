@@ -15,7 +15,6 @@
         <a class="nav-link dropdown-toggle sm" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" i18n>Users</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" routerLink="/memberadd" i18n>Add user</a>
-          <a class="dropdown-item" i18n>Edit user</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" routerLink="/members" i18n>User list</a>
         </div>
@@ -23,7 +22,7 @@
       <li class="nav-item dropdown" *ngIf="authService.userToken">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" i18n>Classes</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" i18n>Add class</a>
+          <a routerLink="/classes/new" class="dropdown-item" i18n>Add class</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" routerLink="/classes" i18n>Class list</a>
         </div>
@@ -44,8 +43,12 @@
         <a class="nav-link" routerLink="/register" i18n>Sign up</a>
       </li>
       <li class="nav-item" *ngIf="authService.userToken">
-        <a class="nav-link" (click)="logout()" routerLink="/logout">Log out</a>
+        <a class="nav-link" (click)="logout()" routerLink="/logout" i18n>Log out</a>
       </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" class="nav-link" title="Polski"><img src="assets/images/polish.png" alt="Polski" /></a></li>
+      <li><a href="#" class="nav-link" title="English"><img src="assets/images/english.png" alt="English" /></a></li>
     </ul>
   </div>
 </nav>
@@ -53,6 +56,7 @@
 <header class="bg-primary text-white">
   <div class="container text-center">
     <h1>e-Skarbnik</h1>
-    <p class="lead" i18n>You are logged in as <strong>{{ authService.userToken.displayName }}</strong></p>
+    <p class="lead" *ngIf="authService.userToken">You are logged in as <strong>{{ authService.userToken.displayName }}</strong></p>
+    <p class="lead" *ngIf="!authService.userToken" i18n>You are not logged in</p>
   </div>
 </header>
