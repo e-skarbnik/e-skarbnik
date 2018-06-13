@@ -62,6 +62,7 @@ export class ClassCrudService {
     this.clsDoc = this.angularFirestore.doc<Class>('classes/' + id);
     this.clss = this.clsDoc.valueChanges();
     return this.clss;
+    //W tej metodzie należy użyć clsCollection.snapshotChanges(), aby dokleić dane o referencjach do użytkowników.
   }
   updateClass(cls: Class) {
     this.clsDoc.update(cls);
