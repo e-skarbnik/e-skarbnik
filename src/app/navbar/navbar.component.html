@@ -23,7 +23,7 @@
       <li class="nav-item dropdown" *ngIf="authService.userToken">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" i18n>Classes</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" i18n>Add class</a>
+          <a routerLink="/classes/new" class="dropdown-item" i18n>Add class</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" routerLink="/classes" i18n>Class list</a>
         </div>
