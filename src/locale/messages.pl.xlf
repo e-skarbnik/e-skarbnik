@@ -130,6 +130,46 @@
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="62b6c66981335ca6eecc36b331103c60f09d1026" datatype="html">
+        <source>First name</source>
+        <target>Imię</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9e5ac183bc4cf80f01cde3ff96207b11464a4295" datatype="html">
+        <source>Surname</source>
+        <target>Nazwisko</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="95742efef1c0c369b88a7e485e7de657e6d2ab18" datatype="html">
+        <source>Paymaster</source>
+        <target>Skarbnik</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="408cb6073e60c5d966296a3207fc596adca75e01" datatype="html">
+        <source>Admin</source>
+        <target>Admin</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="45cc8ca94b5a50842a9a8ef804a5ab089a38ae5c" datatype="html">
         <source>ID</source>
         <target>ID</target>
@@ -154,12 +194,28 @@
           <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="ae39e41097f712a2b669c3ce1f01acac74f95f05" datatype="html">
+        <source>School</source>
+        <target>Szkoła</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="047f50bc5b5d17b5bec0196355953e1a5c590ddb" datatype="html">
         <source>Update</source>
         <target>Zaktualizuj</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
           <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d8f1cc08cce621c2f2f23ce39ba3aaa0f655fc9d" datatype="html">
+        <source>Pupils</source>
+        <target>Uczniowie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="80fa90ce67552f3f8a824f756a94327e41d3fc49" datatype="html">
