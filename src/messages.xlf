@@ -111,6 +111,69 @@
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="c5366970eef346dfa081dbd7a39ff7abe8b7134b" datatype="html">
+        <source>e-Skarbnik is an application made for menagement of class or group foundrising.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="21b17936656eeddf76feb6baca8b7b7dc059270c" datatype="html">
+        <source>If You are student propably you often chip in to a lot of stuff, like a going out to cinema whole class, teachers day, or for example small gift for educator, or lady with the Dean&apos;s Office. For Those actions you have to choose an treasurer wich will take care of foundrasing. But from an experience we know that usualy nobody want this role. This is due to the fact that treasurer is an responsible, painstaking and often hard job.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4c6383a76f52b5e80be7c03e104b65309f035c1f" datatype="html">
+        <source>Fortunately, with the help comes e-Skarbnik!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="215a14db50a61a93289298c57cc054fd5b16412e" datatype="html">
+        <source>Why raising founds with an e-Skarbnik is better than traditional raising money?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="af934e7ef294c2359b2052bfab34c748071af390" datatype="html">
+        <source>We do not have to involve a specific personosoby.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e7eaaf8548e6aeaa0f035a6151388224524092b2" datatype="html">
+        <source>We can pay via the Internet, using several platforms.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0eaf94c7cf1ab0c29fd50652748dac95772b3786" datatype="html">
+        <source>Information about the collection will go to everyone.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="094ad851c34041e4e2e1f8763608ec41676be767" datatype="html">
+        <source>We have the option of including the viewer who paid and who did not.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c60d559f6f0355339fea02165e3d4933c10efee7" datatype="html">
+        <source>There is no possibility that the physical treasurer will be robbed, he will take money or (at worst) he will spend the collected money on alcohol or other drugs (especially dangerous in the case of student collections).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="45cc8ca94b5a50842a9a8ef804a5ab089a38ae5c" datatype="html">
         <source>ID</source>
         <context-group purpose="location">
@@ -165,7 +228,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
@@ -201,7 +264,7 @@
         <source>Pupils</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="80fa90ce67552f3f8a824f756a94327e41d3fc49" datatype="html">
