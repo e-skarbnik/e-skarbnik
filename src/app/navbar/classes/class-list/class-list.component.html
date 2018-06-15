@@ -20,7 +20,7 @@
             <td><p *ngFor="let name of cls.memberArray">{{ name }}</p></td>
             <td>
               <button type="button" class="btn btn-primary" routerLink="/classes/{{ cls.id }}" i18n>Edit</button>
-              <button type="button" class="btn btn-warning" routerLink="/classes/delete/{{ cls.id }}" i18n>Delete</button>
+              <button type="button" class="btn btn-danger"  (click)="deleteClass(cls)" i18n>Delete</button>
             </td>
           </tr>
       </table>
