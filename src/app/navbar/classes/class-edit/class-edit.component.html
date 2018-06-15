@@ -1,12 +1,6 @@
 <div class="col-md-6">
   <form (ngSubmit)="updateClass(formData)" #formData="ngForm">
     <div class="form-group row">
-      <label for="staticName" class="col-sm-2 col-form-label" i18n>ID</label>
-      <div class="col-sm-10">
-        <input [(ngModel)]="cls.id" name="id" autocomplete="id" type="text" class="form-control hide" placeholder="id" #surname="ngModel" disabled>
-      </div>
-    </div>
-    <div class="form-group row">
       <label for="staticName" class="col-sm-2 col-form-label" i18n>Name</label>
       <div class="col-sm-10">
         <input [(ngModel)]="cls.name" name="name" autocomplete="name"  type="text" class="form-control" placeholder="Your name" #name="ngModel">
@@ -15,14 +9,13 @@
     <div class="form-group row">
       <label for="staticName" class="col-sm-2 col-form-label" i18n>School</label>
       <div class="col-sm-10">
-        <input [(ngModel)]="cls.school" name="school" autocomplete="school" type="text" class="form-control" placeholder="School..." #surname="ngModel">
+        <input [(ngModel)]="cls.school" name="school" autocomplete="school" type="text" class="form-control" placeholder="School..." #school="ngModel">
       </div>
     </div>
     <div class="form-group row">
       <label for="staticName" class="col-sm-2 col-form-label" i18n>Description</label>
       <div class="col-sm-10">
-        <input [(ngModel)]="cls.description" name="description" autocomplete="description" type="text" class="form-control" placeholder="Description..." #surname="ngModel">
-       
+        <input [(ngModel)]="cls.description" name="description" autocomplete="description" type="text" class="form-control" placeholder="Description..." #description="ngModel">
       </div>
     </div>
     <div class="form-group row">

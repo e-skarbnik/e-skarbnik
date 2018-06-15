@@ -27,10 +27,10 @@ export class ClassCrudService {
     this.clssSnap = this.clsCollection.snapshotChanges().map(actions => actions.map(
       a => {
         const data = a.payload.doc.data() as any;
- //       const id = a.payload.doc.id;
+        data.id = a.payload.doc.id;
 
         if (data.members !== undefined) {
-          console.log(data);
+          // console.log(data);
 
           let memArr = [];
 
@@ -38,14 +38,16 @@ export class ClassCrudService {
             this.member = this.angularFirestore.collection('users').doc(elem.id);
 
             this.member.valueChanges().subscribe((profile: any) => {
-              console.log(profile);
+              // console.log(profile);
               memArr.push(profile.name);
             });
           });
           // this.members = this.angularFirestore.collection('users').doc(data.members[0].path).snapshotChanges();
 
-          console.log(memArr);
+          // console.log(memArr);
           return { ...data, memberArray: memArr };
+        }else{
+          return { ...data };
         }
         //     const me = this.angularFirestore.doc(data.member);
 

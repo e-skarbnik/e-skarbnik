@@ -9,6 +9,7 @@ import { UsersComponent } from './navbar/users/users.component';
 import { UserEditComponent } from './navbar/users/user-edit/user-edit.component';
 import { AuthGuardService } from './services/auth-guard.service';
 import { ClassesComponent } from './navbar/classes/classes.component';
+import { ClassAddComponent } from './navbar/classes/class-add/class-add.component';
 import { ClassEditComponent } from './navbar/classes/class-edit/class-edit.component';
 
 const appRoutes: Routes = [
@@ -49,8 +50,14 @@ const appRoutes: Routes = [
     canActivate: [AuthGuardService]
   },
   {
+    path: 'classes/add',
+    component: ClassAddComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
     path: 'classes/:id',
-    component: ClassEditComponent
+    component: ClassEditComponent,
+    canActivate: [AuthGuardService]
   },
   {
     path: '**',

@@ -36,10 +36,9 @@ export class ClassEditComponent implements OnInit {
     const cls: Class = {
       name: tableData.value.name,
       description: tableData.value.description,
-      school: tableData.value.school,
-      id: tableData.value.key
+      school: tableData.value.school
     };
-    
+
     this.clService.updateClass(this.cls);
     this.router.navigateByUrl('/classes');
   }

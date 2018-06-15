@@ -29,10 +29,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ### Notes by Michał Kowalik:
 
-## Aby zaktualizować tluamczenie:
+## To update translation:
 ng xi18n
 lub
 ng xi18n --output-path src/locale --out-file messages.pl.xlf
 
-## Aby uruchomić aplikacje w odpowiedniej wersji jezykowej:
-./serve_polish
+## To run application in polish:
+./serve_polish (linux) or sh serve_polish (windows)
