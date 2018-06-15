@@ -28,9 +28,8 @@ import { ClassCrudService } from './services/class-crud.service';
 import { ClassesComponent } from './navbar/classes/classes.component';
 import { ClassEditComponent } from './navbar/classes/class-edit/class-edit.component';
 import { ClassListComponent } from './navbar/classes/class-list/class-list.component';
-
-import { ClassAddmembersComponent } from './class-addmembers/class-addmembers.component';
 import { ClassAddComponent } from './navbar/classes/class-add/class-add.component';
+import { ClassDeleteComponent } from './navbar/classes/class-delete/class-delete.component';
 
 // i18n
 import { registerLocaleData } from '@angular/common';

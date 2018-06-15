@@ -11,6 +11,7 @@ import { AuthGuardService } from './services/auth-guard.service';
 import { ClassesComponent } from './navbar/classes/classes.component';
 import { ClassAddComponent } from './navbar/classes/class-add/class-add.component';
 import { ClassEditComponent } from './navbar/classes/class-edit/class-edit.component';
+import { ClassEditComponent } from './navbar/classes/class-delete/class-delete.component';
 
 const appRoutes: Routes = [
   {
@@ -57,6 +58,11 @@ const appRoutes: Routes = [
   {
     path: 'classes/:id',
     component: ClassEditComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: 'classes/delete/:id',
+    component: ClassDeleteComponent,
     canActivate: [AuthGuardService]
   },
   {
