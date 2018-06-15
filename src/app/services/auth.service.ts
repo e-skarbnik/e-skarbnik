@@ -68,6 +68,7 @@ export class AuthService {
           email: user.user.email
         };
         this.memberService.addMember(use);
+        this.router.navigateByUrl('/home');
       }))
       .catch(err => { console.log(err); });
   }

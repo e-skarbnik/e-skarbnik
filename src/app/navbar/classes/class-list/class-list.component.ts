@@ -15,9 +15,14 @@ export class ClassListComponent implements OnInit {
   constructor(private clsService: ClassCrudService) {
     this.clss = this.clsService.getClasses();
     this.clssId = this.clss.getId;
-   }
+  }
 
   ngOnInit() {
+  }
+  deleteClass(cls: Class) {
+    if (confirm('Are you sure?')) {
+      this.clsService.deleteClass(cls);
+    }
   }
 
 }
