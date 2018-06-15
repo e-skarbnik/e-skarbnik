@@ -69,4 +69,8 @@ export class ClassCrudService {
   updateClass(cls: Class) {
     this.clsDoc.update(cls);
   }
+  deleteClass(cls: Class) {
+    this.clsDoc = this.angularFirestore.doc<Class>('classes/' + cls.id);
+    this.clsDoc.delete();
+  }
 }
