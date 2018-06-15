@@ -1,0 +1,26 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <button type="button" class="btn btn-success" routerLink="/classes/new" i18n>Add class</button>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col" i18n>Name</th>
+            <th scope="col" i18n>School</th>
+            <th scope="col" i18n>Members</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cls of clss | async; let i = index">
+            <td>{{ i+1 }}</td>
+            <td>{{ cls.name }}</td>
+            <td>{{ cls.school }}</td>
+            <td><p *ngFor="let name of cls.memberArray">{{ name }}</p></td>
+            <td><button type="button" class="btn btn-primary" routerLink="/classes/{{ cls.id }}" i18n>Edit</button></td>
+          </tr>
+      </table>
+    </div>
+  </div>
+</section>
