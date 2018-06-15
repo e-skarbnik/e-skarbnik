@@ -12,6 +12,7 @@ import { ClassesComponent } from './navbar/classes/classes.component';
 import { ClassAddComponent } from './navbar/classes/class-add/class-add.component';
 import { ClassEditComponent } from './navbar/classes/class-edit/class-edit.component';
 import { EventsComponent } from './navbar/events/events.component';
+import { EventAddComponent } from './navbar/events/event-add/event-add.component';
 
 const appRoutes: Routes = [
   {
@@ -63,6 +64,11 @@ const appRoutes: Routes = [
   {
     path: 'events',
     component: EventsComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: 'events/add',
+    component: EventAddComponent,
     canActivate: [AuthGuardService]
   },
   {
