@@ -53,8 +53,8 @@ registerLocaleData(localePl, 'pl');
     ClassesComponent,
     ClassEditComponent,
     ClassListComponent,
-    ClassAddmembersComponent,
-    ClassAddComponent
+    ClassAddComponent,
+    ClassDeleteComponent
   ],
   imports: [
     BrowserModule,
