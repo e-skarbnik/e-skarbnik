@@ -39,7 +39,7 @@ export class ClassEditComponent implements OnInit {
       school: tableData.value.school,
       id: tableData.value.key
     };
-    //console.log(member);
+    
     this.clService.updateClass(this.cls);
     this.router.navigateByUrl('/classes');
   }
