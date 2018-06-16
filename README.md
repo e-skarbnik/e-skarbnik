@@ -10,15 +10,15 @@ The application created by:
   * Piotr Kadula
 
 ## Prototype:
-Marvel App: 'https://marvelapp.com/17228efg'
+[Marvel App](https://marvelapp.com/17228efg)
 
-### Notes by Michał Kowalik:
+<!-- ### Notes by Michał Kowalik: -->
 
-## To update translation:
-ng xi18n
+<!-- ## To update translation:
+ng xi18n -->
 
-## To run application in polish:
-./serve_polish (linux) or sh serve_polish (windows)
+<!-- ## To run application in polish:
+./serve_polish (linux) or sh serve_polish (windows) -->
 
 <!-- ## Development server -->
 
