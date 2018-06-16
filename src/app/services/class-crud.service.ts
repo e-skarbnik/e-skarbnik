@@ -56,15 +56,17 @@ export class ClassCrudService {
 
     return this.clssSnap;
   }
-  addClass(cls: Class) {
-    this.clsCollection = this.angularFirestore.collection<Class>('classes');
-    this.clsCollection.add(cls).then(value => { console.log('Class Added'); }).catch();
-  }
+
   getClassByID(id: string) {
     this.clsDoc = this.angularFirestore.doc<Class>('classes/' + id);
     this.clss = this.clsDoc.valueChanges();
     return this.clss;
     //W tej metodzie należy użyć clsCollection.snapshotChanges(), aby dokleić dane o referencjach do użytkowników.
+  }
+
+  addClass(cls: Class) {
+    this.clsCollection = this.angularFirestore.collection<Class>('classes');
+    this.clsCollection.add(cls).then(value => { console.log('Class Added'); }).catch();
   }
   updateClass(cls: Class) {
     this.clsDoc.update(cls);
