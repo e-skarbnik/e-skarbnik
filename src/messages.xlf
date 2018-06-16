@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4d13a9cd5ed3dcee0eab22cb25198d43886942be" datatype="html">
+        <source>Users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f8c7e16da78e5daf06335e60dd27f03ec30530f4" datatype="html">
+        <source>Add user</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="58866bd2a411a7df43a1708322598f772a8f893e" datatype="html">
+        <source>User list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1172ffb28e42ff5ae0d36af63448744a3af23d41" datatype="html">
+        <source>Classes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f8918fe191d7450a44cf65b3803bdce17b926fbb" datatype="html">
+        <source>Add class</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187cf9aea5ce14b7da445796e94d2d6c7c50ce15" datatype="html">
+        <source>Class list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="af88c1e95a1d16d3cdbb7210981e0bfb6dc1d137" datatype="html">
+        <source>Events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="762a5337fcd1048f0a2c886a8fe0c3a8eb9a62b9" datatype="html">
+        <source>Add event</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="56c74224d22c7379fdbf9d0a00c8bf519a9ee661" datatype="html">
+        <source>Edit event</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="14eb68552c2ee7e887c5560d223465a0d9ccd175" datatype="html">
+        <source>Event list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="287d3301a32a65a1b31116bda5d3a6463158c42a" datatype="html">
+        <source>Sign in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c40c132843f349c3aa49730405de1d0ca733aef6" datatype="html">
+        <source>Sign up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3fdc751b264ca9998e1542fcf5794e274cd56344" datatype="html">
+        <source>Log out</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="026e8575151e67e8ac59d90db7e7488f1fd2cc05" datatype="html">
+        <source>You are not logged in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b5d12ef36bcaf0220bba024f33a9d28ffb86a18d" datatype="html">
+        <source>Welcome to e-Skarbnik application!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c5366970eef346dfa081dbd7a39ff7abe8b7134b" datatype="html">
+        <source>e-Skarbnik is an application made for menagement of class or group foundrising.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="21b17936656eeddf76feb6baca8b7b7dc059270c" datatype="html">
+        <source>If You are student propably you often chip in to a lot of stuff, like a going out to cinema whole class, teachers day, or for example small gift for educator, or lady with the Dean&apos;s Office. For Those actions you have to choose an treasurer wich will take care of foundrasing. But from an experience we know that usualy nobody want this role. This is due to the fact that treasurer is an responsible, painstaking and often hard job.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4c6383a76f52b5e80be7c03e104b65309f035c1f" datatype="html">
+        <source>Fortunately, with the help comes e-Skarbnik!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="215a14db50a61a93289298c57cc054fd5b16412e" datatype="html">
+        <source>Why raising founds with an e-Skarbnik is better than traditional raising money?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="af934e7ef294c2359b2052bfab34c748071af390" datatype="html">
+        <source>We do not have to involve a specific personosoby.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e7eaaf8548e6aeaa0f035a6151388224524092b2" datatype="html">
+        <source>We can pay via the Internet, using several platforms.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0eaf94c7cf1ab0c29fd50652748dac95772b3786" datatype="html">
+        <source>Information about the collection will go to everyone.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="094ad851c34041e4e2e1f8763608ec41676be767" datatype="html">
+        <source>We have the option of including the viewer who paid and who did not.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c60d559f6f0355339fea02165e3d4933c10efee7" datatype="html">
+        <source>There is no possibility that the physical treasurer will be robbed, he will take money or (at worst) he will spend the collected money on alcohol or other drugs (especially dangerous in the case of student collections).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="45cc8ca94b5a50842a9a8ef804a5ab089a38ae5c" datatype="html">
+        <source>ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="62b6c66981335ca6eecc36b331103c60f09d1026" datatype="html">
+        <source>First name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9e5ac183bc4cf80f01cde3ff96207b11464a4295" datatype="html">
+        <source>Surname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="95742efef1c0c369b88a7e485e7de657e6d2ab18" datatype="html">
+        <source>Paymaster</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="408cb6073e60c5d966296a3207fc596adca75e01" datatype="html">
+        <source>Admin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="047f50bc5b5d17b5bec0196355953e1a5c590ddb" datatype="html">
+        <source>Update</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ae39e41097f712a2b669c3ce1f01acac74f95f05" datatype="html">
+        <source>School</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eec715de352a6b114713b30b640d319fa78207a0" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d8f1cc08cce621c2f2f23ce39ba3aaa0f655fc9d" datatype="html">
+        <source>Pupils</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80fa90ce67552f3f8a824f756a94327e41d3fc49" datatype="html">
+        <source>Members</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28f86ffd419b869711aa13f5e5ff54be6d70731c" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
