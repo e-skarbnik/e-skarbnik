@@ -5,5 +5,5 @@ export class Class {
   name: string;
   school: string;
   description?: string;
-  member?: any;
+  members?: any;
 }

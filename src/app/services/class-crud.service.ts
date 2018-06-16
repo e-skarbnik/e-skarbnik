@@ -18,6 +18,7 @@ export class ClassCrudService {
   clss: Observable<Class>;
   clssSnap: any;
   member: any;
+  cl: any;
 
   constructor(private angularFirestore: AngularFirestore, private memSer: MemberService) { }
 
@@ -39,14 +40,16 @@ export class ClassCrudService {
 
             this.member.valueChanges().subscribe((profile: any) => {
               // console.log(profile);
-              memArr.push(profile.name);
+              if (profile !== null) {
+                memArr.push(profile.name);
+              }
             });
           });
           // this.members = this.angularFirestore.collection('users').doc(data.members[0].path).snapshotChanges();
 
           // console.log(memArr);
-          return { ...data, memberArray: memArr };
-        }else{
+          return { ...data, membersArray: memArr };
+        } else {
           return { ...data };
         }
         //     const me = this.angularFirestore.doc(data.member);
@@ -60,7 +63,39 @@ export class ClassCrudService {
   getClassByID(id: string) {
     this.clsDoc = this.angularFirestore.doc<Class>('classes/' + id);
     this.clss = this.clsDoc.valueChanges();
-    return this.clss;
+    this.cl = this.clsDoc.snapshotChanges().map(actions => {
+      const data = actions.payload.data() as any;
+      data.id = actions.payload.id;
+
+      if (data.members !== undefined) {
+        let memArr = [];
+
+        data.members.forEach(el => {
+          this.member = this.angularFirestore.collection('users').doc(el.id);
+          this.member.valueChanges().subscribe((profile: any) => {
+            // console.log(profile);
+            if (profile !== null) {
+              memArr.push(profile);
+            }
+          });
+        });
+        return { ...data, membersArray: memArr };
+      } else {
+        return {
+          data: {
+            name: '',
+            school: '',
+            description: ''
+
+          }, membersArray: [{
+            name: 'test',
+            surname: 'test'
+          }]
+        };
+      }
+    });
+
+    return this.cl;
     //W tej metodzie należy użyć clsCollection.snapshotChanges(), aby dokleić dane o referencjach do użytkowników.
   }
 

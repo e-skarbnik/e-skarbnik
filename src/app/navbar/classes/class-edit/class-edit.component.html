@@ -1,4 +1,4 @@
-<div class="col-md-6">
+<div *ngIf="cls !== undefined" class="col-md-6">
   <form (ngSubmit)="updateClass(formData)" #formData="ngForm">
     <div class="form-group row">
       <label for="staticName" class="col-sm-2 col-form-label" i18n>Name</label>
@@ -30,7 +30,7 @@
       <label for="staticName" class="col-sm-2 col-form-label" i18n>Pupils2</label>
         <div class="col-sm-10">
           <select multiple class="form-control" size="10">
-            <option *ngFor="let member of cls.memberArray" value="aaa">test</option>
+            <option *ngFor="let member of cls.membersArray" value="">{{ member.name }} {{member.surname}}</option>
           </select>
         </div>
     </div>
