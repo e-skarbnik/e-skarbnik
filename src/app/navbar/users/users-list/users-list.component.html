@@ -6,9 +6,9 @@
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Surname</th>
-            <th scope="col">Email</th>
+            <th scope="col" i18n>Name</th>
+            <th scope="col" i18n>Surname</th>
+            <th scope="col" i18n>Email</th>
           </tr>
         </thead>
         <tbody>
@@ -17,8 +17,10 @@
             <td>{{ user.name }}</td>
             <td>{{ user.surname }}</td>
             <td>{{ user.email }}</td>
-            <td><button type="button" class="btn btn-primary" routerLink="/member/{{ user.key }}">Edit</button></td>
-            <td><button type="button" class="btn btn-danger" (click)="delete(user)" >Delete</button></td>
+            <td>
+              <button type="button" class="btn btn-primary" routerLink="/member/{{ user.key }}" i18n>Edit</button>
+              <button type="button" class="btn btn-danger" (click)="delete(user)" i18n>Delete</button>
+            </td>
           </tr>
       </table>
     </div>

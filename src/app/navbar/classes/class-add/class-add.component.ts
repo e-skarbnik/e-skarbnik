@@ -26,14 +26,12 @@ export class ClassAddComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router
   ) {
-    // this.route.params.switchMap((params: Params) => this.clService.getClassByID(params['id'])).subscribe(cl => this.cls = cl);
     this.cls = {
       name: '',
       description: '',
       school: ''
     };
     this.mService.getMembers().subscribe(usrs => this.users = usrs);
-
    }
 
   ngOnInit() {

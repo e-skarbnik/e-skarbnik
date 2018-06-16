@@ -31,8 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## To update translation:
 ng xi18n
-lub
-ng xi18n --output-path src/locale --out-file messages.pl.xlf
 
 ## To run application in polish:
 ./serve_polish (linux) or sh serve_polish (windows)
