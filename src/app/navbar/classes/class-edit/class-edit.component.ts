@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
 })
 export class ClassEditComponent implements OnInit {
 
-  cls: Class;
+  cls: any;
   users: Member[];
 
   constructor(
