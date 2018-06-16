@@ -2,8 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
+## Creators
+The application created by:
+  * Paweł Kuciel
+  * Michał Kowalik
+  * Damian Leszczyński
+  * Piotr Kadula
+
 ## Prototype:
-Created in Marvel App: 'https://marvelapp.com/17228efg'
+Marvel App: 'https://marvelapp.com/17228efg'
 
 ### Notes by Michał Kowalik:
 
@@ -13,7 +20,7 @@ ng xi18n
 ## To run application in polish:
 ./serve_polish (linux) or sh serve_polish (windows)
 
-<!-- ## Development server -->
+## Development server -->
 
 <!-- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. -->
 
