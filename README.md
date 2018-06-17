@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Creators
-The application created by:
+The application is created by:
   * Paweł Kuciel
   * Michał Kowalik
   * Damian Leszczyński
