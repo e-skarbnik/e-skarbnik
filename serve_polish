@@ -1,0 +1,1 @@
+ng serve --aot --i18n-file=src/locale/messages.pl.xlf --locale=pl --i18n-format=xlf
