@@ -67,7 +67,7 @@ const appRoutes: Routes = [
     canActivate: [AuthGuardService]
   },
   {
-    path: 'event_list',
+    path: 'events/list',
     component: EventListComponent,
     canActivate: [AuthGuardService]
   },
