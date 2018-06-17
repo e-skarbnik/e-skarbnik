@@ -11,6 +11,8 @@ export class MemberService {
   user: Member;
   us: Observable<Member>;
   userDoc: AngularFirestoreDocument<Member>;
+  count: number;
+  memberSnap: any;
 
   constructor(private firestore: AngularFirestore) { }
 
@@ -19,6 +21,17 @@ export class MemberService {
     this.users = this.usersCollection.valueChanges();
     return this.users;
   }
+  getNumberOfMembers() {
+    this.count = 0;
+    this.usersCollection = this.firestore.collection<Member>('users');
+    this.memberSnap = this.usersCollection.snapshotChanges().map(actions => actions.map(
+      a => {
+        this.count++;
+      }
+    ));
+    return this.count;
+  }
+
 
   addMember(user: Member) {
     //  user.key = this.firestore.createId();
