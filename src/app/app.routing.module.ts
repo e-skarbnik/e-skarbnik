@@ -12,6 +12,8 @@ import { AuthGuardService } from './services/auth-guard.service';
 import { ClassesComponent } from './navbar/classes/classes.component';
 import { ClassAddComponent } from './navbar/classes/class-add/class-add.component';
 import { ClassEditComponent } from './navbar/classes/class-edit/class-edit.component';
+import { EventListComponent } from './navbar/events/event-list/event-list.component';
+import { EventAddComponent } from './navbar/events/event-add/event-add.component';
 
 const appRoutes: Routes = [
   {
@@ -57,6 +59,16 @@ const appRoutes: Routes = [
   {
     path: 'classes/add',
     component: ClassAddComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: 'events/add',
+    component: EventAddComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: 'event_list',
+    component: EventListComponent,
     canActivate: [AuthGuardService]
   },
   {
