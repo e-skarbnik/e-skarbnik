@@ -23,7 +23,7 @@ export class EventCrudService {
   addEvent(event: Event) {
     //  user.key = this.firestore.createId();
     this.evCollection = this.firestore.collection<Event>('events');
-    this.evCollection.add(event).then(value => { console.log('Class Added'); }).catch();
+    this.evCollection.add(event).then(value => { console.log('Event Added'); }).catch();
   }
   getEventByUID(uid) {
     this.eventDoc = this.firestore.doc<Event>('events/' + uid);

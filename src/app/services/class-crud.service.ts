@@ -60,6 +60,11 @@ export class ClassCrudService {
     this.clsCollection = this.angularFirestore.collection<Class>('classes');
     this.clsCollection.add(cls).then(value => { console.log('Class Added'); }).catch();
   }
+  getCls() {
+    this.clsCollection = this.angularFirestore.collection<Class>('classes');
+    this.clses = this.clsCollection.valueChanges();
+    return this.clses;
+  }
   getClassByID(id: string) {
     this.clsDoc = this.angularFirestore.doc<Class>('classes/' + id);
     this.clss = this.clsDoc.valueChanges();

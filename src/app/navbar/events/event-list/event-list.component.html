@@ -13,9 +13,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let ev of evs | async; let i = index">
+          <tr *ngFor="let event of events | async; let i = index">
             <td>{{ i+1 }}</td>
-            <td>{{ ev.name }}</td>
+            <td>{{ event.name }}</td>
+            <td>{{ class }} </td>
+            <td>{{ event.cost }} </td>
+            <td>{{ event.descritpion }} </td>
             <!-- <td><button type="button" class="btn btn-primary" routerLink="/classes/{{ cls.id }}" i18n>Edit</button></td> -->
           </tr>
       </table>
