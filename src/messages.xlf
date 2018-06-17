@@ -2,39 +2,57 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="091ad013dbe4e623f472cea0d357d420300cd47c" datatype="html">
+        <source>Home<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>(current)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f65253954b66e929a8b4d5ecaf61f9129f8cec64" datatype="html">
+        <source>Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4d13a9cd5ed3dcee0eab22cb25198d43886942be" datatype="html">
         <source>Users</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f8c7e16da78e5daf06335e60dd27f03ec30530f4" datatype="html">
         <source>Add user</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="58866bd2a411a7df43a1708322598f772a8f893e" datatype="html">
         <source>User list</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1172ffb28e42ff5ae0d36af63448744a3af23d41" datatype="html">
         <source>Classes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f8918fe191d7450a44cf65b3803bdce17b926fbb" datatype="html">
         <source>Add class</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
@@ -45,70 +63,70 @@
         <source>Class list</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="af88c1e95a1d16d3cdbb7210981e0bfb6dc1d137" datatype="html">
         <source>Events</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="762a5337fcd1048f0a2c886a8fe0c3a8eb9a62b9" datatype="html">
         <source>Add event</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="56c74224d22c7379fdbf9d0a00c8bf519a9ee661" datatype="html">
         <source>Edit event</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="14eb68552c2ee7e887c5560d223465a0d9ccd175" datatype="html">
         <source>Event list</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="287d3301a32a65a1b31116bda5d3a6463158c42a" datatype="html">
         <source>Sign in</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c40c132843f349c3aa49730405de1d0ca733aef6" datatype="html">
         <source>Sign up</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3fdc751b264ca9998e1542fcf5794e274cd56344" datatype="html">
         <source>Log out</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="a2a4612077299881a700d2ebf021aa4eb4196ac4" datatype="html">
         <source>You are logged in as</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="026e8575151e67e8ac59d90db7e7488f1fd2cc05" datatype="html">
         <source>You are not logged in</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
@@ -270,6 +288,55 @@
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/home/home.component.ts</context>
           <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="61e0f26d843eec0b33ff475e111b0c2f7a80b835" datatype="html">
+        <source>Statistics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3b5fe3aad8cdfe8965d9ea759056bc896f8d3008" datatype="html">
+        <source>Number of users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d8cef89d7167e9627221781b1b66904ae45efadf" datatype="html">
+        <source>Number of schools</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0310f5a3e21bf98394e401af1bf61d5dde119e2e" datatype="html">
+        <source>Number of events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d356e848995d6756b7dfaa9607423deea32fbac6" datatype="html">
+        <source>Exchange rates</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="32072c7fb0469aaf82d256a59b3e0d6ecce973b9" datatype="html">
+        <source>Currency</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5049e204c14c648691ac775a64fb504467aeb549" datatype="html">
+        <source>Value</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">

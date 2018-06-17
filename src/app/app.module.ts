@@ -14,7 +14,7 @@ import { LoginComponent } from './navbar/login/login.component';
 import { RegisterComponent } from './navbar/register/register.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './navbar/home/home.component';
-
+import { DashboardComponent } from './navbar/dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { environment } from '../environments/environment';
@@ -46,6 +46,7 @@ registerLocaleData(localePl, 'pl');
     RegisterComponent,
     PageNotFoundComponent,
     HomeComponent,
+    DashboardComponent,
     UsersListComponent,
     UsersComponent,
     UserEditComponent,

@@ -210,6 +210,62 @@
           <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="61e0f26d843eec0b33ff475e111b0c2f7a80b835" datatype="html">
+        <source>Statistics</source>
+        <target>Statystyki</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3b5fe3aad8cdfe8965d9ea759056bc896f8d3008" datatype="html">
+        <source>Number of users</source>
+        <target>Liczba użytkowników</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d8cef89d7167e9627221781b1b66904ae45efadf" datatype="html">
+        <source>Number of schools</source>
+        <target>Liczba szkół</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0310f5a3e21bf98394e401af1bf61d5dde119e2e" datatype="html">
+        <source>Number of events</source>
+        <target>Liczba zbiórek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d356e848995d6756b7dfaa9607423deea32fbac6" datatype="html">
+        <source>Exchange rates</source>
+        <target>Kursy walut</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="32072c7fb0469aaf82d256a59b3e0d6ecce973b9" datatype="html">
+        <source>Currency</source>
+        <target>Waluta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5049e204c14c648691ac775a64fb504467aeb549" datatype="html">
+        <source>Value</source>
+        <target>Wartość</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
         <source>Email</source>
         <target>Email</target>
