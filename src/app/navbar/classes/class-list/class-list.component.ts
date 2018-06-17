@@ -20,7 +20,7 @@ export class ClassListComponent implements OnInit {
   ngOnInit() {
   }
   deleteClass(cls: Class) {
-    if (confirm('Are you sure?')) {
+    if (confirm('<ng-container i18n>Are you sure?</ng-container>')) {
       this.clsService.deleteClass(cls);
     }
   }

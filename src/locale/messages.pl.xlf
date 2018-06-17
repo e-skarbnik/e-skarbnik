@@ -114,6 +114,14 @@
           <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="a2a4612077299881a700d2ebf021aa4eb4196ac4" datatype="html">
+        <source>You are logged in as</source>
+        <target>Jesteś zalogowany jako</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="026e8575151e67e8ac59d90db7e7488f1fd2cc05" datatype="html">
         <source>You are not logged in</source>
         <target>Nie jesteś zalogowany</target>
@@ -226,6 +234,38 @@
           <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+        <target>Hasło</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a86a4bc3d198cd96b2613dcf16f825a0563240e8" datatype="html">
+        <source>Repeat pass</source>
+        <target>Powtórz hasło</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cfc2f436ec2beffb042e7511a73c89c372e86a6c" datatype="html">
+        <source>Register</source>
+        <target>Zarejestruj się</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4e537f8a3b2182a1a7367ec95179d192d2db5818" datatype="html">
+        <source>Use Google!</source>
+        <target>Użyj Google!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="95742efef1c0c369b88a7e485e7de657e6d2ab18" datatype="html">
         <source>Paymaster</source>
         <target>Skarbnik</target>
@@ -296,6 +336,18 @@
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
           <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="826b25211922a1b46436589233cb6f1a163d89b7" datatype="html">
+        <source>Delete</source>
+        <target>Usuń</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/users-list/users-list.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="28f86ffd419b869711aa13f5e5ff54be6d70731c" datatype="html">

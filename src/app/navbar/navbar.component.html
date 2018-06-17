@@ -56,7 +56,7 @@
 <header class="bg-primary text-white">
   <div class="container text-center">
     <h1>e-Skarbnik</h1>
-    <p class="lead" *ngIf="authService.userToken">You are logged in as <strong>{{ authService.userToken.displayName }}</strong></p>
+    <p class="lead" *ngIf="authService.userToken"><ng-container i18n>You are logged in as</ng-container> <strong>{{ authService.userToken.displayName }}</strong></p>
     <p class="lead" *ngIf="!authService.userToken" i18n>You are not logged in</p>
   </div>
 </header>

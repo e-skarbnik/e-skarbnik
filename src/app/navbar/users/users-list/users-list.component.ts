@@ -19,7 +19,7 @@ export class UsersListComponent implements OnInit {
   ngOnInit() {
   }
   delete(user: Member) {
-    if (confirm('Are you sure?')) {
+    if (confirm('<ng-container i18n>Are you sure?</ng-container>')) {
       this.memberService.removeMember(user);
     }
 
