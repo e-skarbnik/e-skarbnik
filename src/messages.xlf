@@ -114,6 +114,10 @@
       <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
         <source>Email</source>
         <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/login/login.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
           <context context-type="linenumber">4</context>
         </context-group>
@@ -126,27 +130,40 @@
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
-        <source>Name</source>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/login/login.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6765b4c916060f6bc42d9bb69e80377dbcb5e4e9" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/login/login.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6f21558313038c924127b3ff527b6a6ec2ec17d7" datatype="html">
+        <source>Login with Google</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/login/login.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="62b6c66981335ca6eecc36b331103c60f09d1026" datatype="html">
+        <source>First name</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/navbar/users/users-list/users-list.component.ts</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/navbar/classes/class-add/class-add.component.ts</context>
-          <context context-type="linenumber">4</context>
+          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
+          <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9e5ac183bc4cf80f01cde3ff96207b11464a4295" datatype="html">
@@ -164,13 +181,6 @@
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
-        <source>Password</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
-          <context context-type="linenumber">22</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="a86a4bc3d198cd96b2613dcf16f825a0563240e8" datatype="html">
         <source>Repeat pass</source>
         <context-group purpose="location">
@@ -185,8 +195,8 @@
           <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4e537f8a3b2182a1a7367ec95179d192d2db5818" datatype="html">
-        <source>Use Google!</source>
+      <trans-unit id="06a817154ec2924fd6381c7393cf01265f6bd2b9" datatype="html">
+        <source>Register with Google</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
           <context context-type="linenumber">34</context>
@@ -262,6 +272,25 @@
           <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/users/users-list/users-list.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-edit/class-edit.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-list/class-list.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/classes/class-add/class-add.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="28f86ffd419b869711aa13f5e5ff54be6d70731c" datatype="html">
         <source>Edit</source>
         <context-group purpose="location">
@@ -289,13 +318,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
           <context context-type="linenumber">4</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="62b6c66981335ca6eecc36b331103c60f09d1026" datatype="html">
-        <source>First name</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/navbar/users/user-edit/user-edit.component.ts</context>
-          <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="95742efef1c0c369b88a7e485e7de657e6d2ab18" datatype="html">

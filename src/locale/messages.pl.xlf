@@ -218,6 +218,22 @@
           <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6765b4c916060f6bc42d9bb69e80377dbcb5e4e9" datatype="html">
+        <source>Login</source>
+        <target>Zaloguj</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/login/login.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6f21558313038c924127b3ff527b6a6ec2ec17d7" datatype="html">
+        <source>Login with Google</source>
+        <target>Zaloguj przez Google</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/login/login.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="62b6c66981335ca6eecc36b331103c60f09d1026" datatype="html">
         <source>First name</source>
         <target>Imię</target>
@@ -252,15 +268,15 @@
       </trans-unit>
       <trans-unit id="cfc2f436ec2beffb042e7511a73c89c372e86a6c" datatype="html">
         <source>Register</source>
-        <target>Zarejestruj się</target>
+        <target>Zarejestruj</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
           <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4e537f8a3b2182a1a7367ec95179d192d2db5818" datatype="html">
-        <source>Use Google!</source>
-        <target>Użyj Google!</target>
+      <trans-unit id="06a817154ec2924fd6381c7393cf01265f6bd2b9" datatype="html">
+        <source>Register with Google</source>
+        <target>Zarejestruj przez Google</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/navbar/register/register.component.ts</context>
           <context context-type="linenumber">34</context>
