@@ -32,7 +32,6 @@ export class ClassCrudService {
 
         if (data.members !== undefined) {
           // console.log(data);
-
           let memArr = [];
 
           data.members.forEach(elem => {
@@ -46,14 +45,12 @@ export class ClassCrudService {
             });
           });
           // this.members = this.angularFirestore.collection('users').doc(data.members[0].path).snapshotChanges();
-
           // console.log(memArr);
           return { ...data, membersArray: memArr };
         } else {
           return { ...data };
         }
         //     const me = this.angularFirestore.doc(data.member);
-
       }
     ));
 
@@ -96,12 +93,17 @@ export class ClassCrudService {
     });
 
     return this.cl;
-    //W tej metodzie należy użyć clsCollection.snapshotChanges(), aby dokleić dane o referencjach do użytkowników.
+    // W tej metodzie należy użyć clsCollection.snapshotChanges(), aby dokleić dane o referencjach do użytkowników.
   }
 
   addClass(cls: Class) {
     this.clsCollection = this.angularFirestore.collection<Class>('classes');
     this.clsCollection.add(cls).then(value => { console.log('Class Added'); }).catch();
+  }
+  getCls() {
+    this.clsCollection = this.angularFirestore.collection<Class>('classes');
+    this.clses = this.clsCollection.valueChanges();
+    return this.clses;
   }
   updateClass(cls: Class) {
     this.clsDoc.update(cls);
