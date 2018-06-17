@@ -25,6 +25,7 @@ import { UsersComponent } from './navbar/users/users.component';
 import { UserEditComponent } from './navbar/users/user-edit/user-edit.component';
 import { AuthGuardService } from './services/auth-guard.service';
 import { ClassCrudService } from './services/class-crud.service';
+import { ExchangeratesService } from './services/exchangerates.service';
 import { ClassesComponent } from './navbar/classes/classes.component';
 import { ClassEditComponent } from './navbar/classes/class-edit/class-edit.component';
 import { ClassListComponent } from './navbar/classes/class-list/class-list.component';
@@ -63,7 +64,7 @@ registerLocaleData(localePl, 'pl');
     AppRoutingModule,
     FormsModule
   ],
-  providers: [AuthService, MemberService, AuthGuardService, ClassCrudService],
+  providers: [AuthService, MemberService, AuthGuardService, ClassCrudService, ExchangeratesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

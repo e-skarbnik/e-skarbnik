@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MemberService } from '../../services/member.service';
+import { ExchangeratesService } from '../../services/exchangerates.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,10 +12,16 @@ export class DashboardComponent implements OnInit {
   numberOfSchools: number;
   numberOfEvents: number;
 
-  constructor(private memberService: MemberService) {
+  exchangeRateOfUSD: number;
+  exchangeRateOfEUR: number;
+
+  constructor(private memberService: MemberService, private exchangeratesService: ExchangeratesService) {
     this.numberOfUsers = memberService.getNumberOfMembers();
     this.numberOfSchools = 23;
     this.numberOfEvents = 435;
+
+    this.exchangeRateOfUSD = exchangeratesService.getExchangeRateByPLN('USD');
+    this.exchangeRateOfEUR = exchangeratesService.getExchangeRateByPLN('EUR');
   }
 
   ngOnInit() {
